@@ -1,0 +1,189 @@
+/* Here is the CSS for the dropdown menu */
+
+.menu {
+    overflow: hidden;
+    background-color:#646464;
+    color: #ebe9e9;
+    width: 100%;
+    font-family: PT_Sans-Regular;
+    margin-top:90px;
+    z-index:1;
+}
+
+.menu a {
+    float: left;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-decoration: none;
+    font-size: 35px;
+    color: #ebe9e9;
+    width: 19%;
+    display:block;
+}
+
+.blogdropdown {
+    float:left;
+    overflow:hidden;
+}
+
+.blogdropdown .blogbutton {
+    font-size: 35px;
+    text-align:center;
+    border:none;
+    outline:none;
+    color: #ebe9e9;
+    padding-top:1px;
+    padding-bottom:1px;
+    padding-left:100px;
+    padding-right:100px;
+    background-color: #646464;
+    font-family: PT_Sans-Regular;
+}
+
+.menu a:hover, .blogdropdown:hover .blogbutton {
+    background-color: #353535;
+    color: #ebe9e9;
+}
+
+.blog-list {
+    display:none;
+    position: absolute;
+    background-color: #cccccc;
+    min-width:250px;
+    margin: 0;
+    padding:0;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    text-align: center;
+}
+
+.blog-list a {
+    float: none;
+    text-align: center;
+    color: #353535;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 25px;
+    width: 250px;
+}
+
+.blog-list a:hover {
+    background-color:#353535;
+    width: 250px;
+}
+
+.blogdropdown:hover .blog-list {
+    display: block;
+}
+
+/* Here is the CSS for other things */
+
+h1 {
+    font-family:PT_Sans-Regular;
+    font-size: 50px;
+}
+
+.img {
+    width: 300px;
+    margin-left: 50px;
+    padding: 10px;
+}
+
+.leftfigure {
+    width: 300px;
+    margin-right: 20px;
+    margin-left:10px;
+    margin-bottom:10px;
+    margin-top:10px;
+    padding-right: 20px;
+}
+
+.rightfigure {
+    width:300px;
+    margin-right:10;
+    margin-left:50px;
+    margin-bottom:10px;
+    margin-top:10px;
+    padding-left:50px;
+}
+
+.blogarticle {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+embed {
+    padding-left: 50px;
+}
+
+iframe {
+    padding-left: 50px;
+}
+
+figcaption {
+    padding-left: 60px;
+    font-family: PT_Serif-Regular;
+}
+
+/* Here is the CSS for the table on ART115blog */
+
+#ART115table {
+    margin: 40px;
+    border-collapse: collapse;
+}
+
+.ART115tableimage {
+    width: 200px;
+}
+
+table thead tr th {
+    height: 200px;
+    padding: 5px;
+}
+
+table tbody tr th {
+    height: 200px;
+    padding: 5px;
+}
+
+table tfoot tr th {
+    height: 200px;
+    padding: 5px;
+}
+
+#ART117list {
+    font-family: PT_Serif-Regular;
+    font-size: 20px;
+    color:black;
+    margin-left: 50px;
+}
+
+/* Here is the CSS for the table on MUL105blog */
+
+#MUL105table {
+    margin: 40px;
+    border-collapse: collapse;
+}
+
+.MUL105tableimage {
+    height: 200px;
+}
+
+table thead tr th {
+    height: 200px;
+    padding: 5px;
+    width: 300px;
+}
+
+table tbody tr th {
+    height: 200px;
+    padding: 5px;
+    width: 300px;
+}
+
+table tfoot tr th {
+    height: 200px;
+    padding: 5px;
+    width: 300px;
+}

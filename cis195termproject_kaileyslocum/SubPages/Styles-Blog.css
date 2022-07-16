@@ -1,0 +1,40 @@
+
+.photo {
+    margin-top: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    width: 500px;
+}
+
+.article {
+    background-color:rgb(238, 238, 238);
+    float: right;
+    margin-top: 60px;
+    margin-right: 60px;
+    margin-bottom: 50px;
+    margin-left: 10px;
+    width: 700px;
+    border: 1px solid;
+}
+
+h2 {
+    font-size: 35px;
+}
+
+ul {
+    color: black;
+    padding-left: 80px;
+    line-height: 1.5;
+    font-size: 15pt;
+}
+
+.link {
+    color: black;
+    text-decoration: none;
+}
+
+.link:visited {
+    text-decoration: none;
+    color: black;
+}

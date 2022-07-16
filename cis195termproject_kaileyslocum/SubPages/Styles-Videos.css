@@ -1,0 +1,47 @@
+embed {
+    margin:40px;
+}
+
+.article {
+    background-color:rgb(238, 238, 238);
+    float: right;
+    margin-top: 60px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    width:600px;
+    border: 1px solid;
+    padding:10px;
+}
+
+h2 {
+    font-family: DancingScript;
+    font-size: 50px;
+    margin-left: 30px;
+    margin-top:10px;
+    margin-bottom:5px;
+}
+
+.article p {
+    padding-top:10px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    padding-left: 30px; 
+}
+
+.section {
+    background-color: rgb(238, 238, 238);
+    margin-bottom: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: 1px solid;
+}
+
+#link {
+    color: black;
+ }
+ 
+ #link:visited {
+     text-decoration: none;
+     color: black;
+ }

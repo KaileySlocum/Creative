@@ -1,0 +1,110 @@
+
+#backimage {
+    width: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    vertical-align: middle;
+}
+/* This CSS is for the image gallery, and I received help with this code from W3schools: https://www.w3schools.com/howto/howto_js_slideshow_gallery.asp */
+
+/* Image container positioning */
+.container {
+    position: relative;
+    margin-top: 50px;
+    margin-left: 400px;
+    margin-right: 100px;
+    width: 750px;
+}
+
+/* Hiding images */
+.mySlides {
+    display: none;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+/* Next and Previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* Next button */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba (0, 0, 0, 0.8);
+}
+
+/* Number text */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* Image text */
+.caption-container {
+    text-align: center;
+    background-color: rgb(209, 209, 209);
+    padding: 2px 16px;
+    color: white;
+}
+
+.row:after {
+    content: "Flowers";
+    font-family:DancingScript;
+    text-align: center;
+    display:table;
+    clear: both;
+}
+
+/* Six columns */
+.column {
+    float: left;
+    width: 16.66%;
+}
+
+/* Thumbnail transparency */
+.demo {
+    opacity: 0.6;
+}
+
+.active, .demo:hover {
+    opacity: 1;
+}
+
+/* Here is the CSS for the table */
+
+#table {
+    margin: 40px;
+    border-collapse: collapse;
+}
+
+.tableimage {
+    width: 330px;
+    padding: 10px;
+}
+

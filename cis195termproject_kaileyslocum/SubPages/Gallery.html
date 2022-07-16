@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <title>Gallery</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../Styles.css" rel="stylesheet">
+    <link href="./Styles-Gallery.css" rel="stylesheet">
+</head>
+
+<body id="backimage">
+    <header>
+        <img src="../Images_Home/LCC-Hills_cropped.jpg" alt="LCC Hills" id="HeaderImage">
+        <h1 style="font-size: 130pt; margin-top:-400px; font-family:DancingScript;">Hello!</h1>
+        <p style="margin-top:-100px; font-family:PT_Sans-Regular; font-size: 30pt; color: rgba(194, 194, 194);">My name is Kailey Slocum</p>
+       
+        <nav class="menu">
+            <a href="../Index.html">Home</a>
+            <a href="./About.html">About</a>
+            <a href="./Gallery.html">Gallery</a>
+            <a href="./Videos.html">Videos</a>
+            <div class="blogdropdown">
+                <button class="blogbutton"><a href="./Blogs.html">Blogs</a></button>
+                <div class="blog-list">
+                    <a href="./BlogPages/MUL101blog.html">MUL101 Blog</a>
+                    <a href="./BlogPages/ART115blog.html">ART115 Blog</a>
+                    <a href="./BlogPages/MUL105blog.html">MUL105 Blog</a>
+                    <a href="./BlogPages/ART117blog.html">ART117 Blog</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--I received help with this code from W3schools: https://www.w3schools.com/howto/howto_js_slideshow_gallery.asp -->
+
+    <!--Container for the image gallery-->
+    <div class="container">
+
+        <!--Images with number text-->
+        <div class="mySlides">
+            <div class="numbertext">5 / 6</div>
+            <img src="./Images_Gallery/Tulips-pink.JPG" alt="Pink Tulips" style="height:500px">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">1 / 6</div>
+            <img src="./Images_Gallery/April 22, 2020-SlocumKailey_0938.jpg" alt="Iris Blossom" style="height:500px">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">2 / 6</div>
+            <img src="./Images_Gallery/RedTulip.jpg" alt="Red Tulip" style="height:500px">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">3 / 6</div>
+            <img src="./Images_Gallery/Wisteria.jpg" alt="Wisteria" style="height:500px">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">4 / 6</div>
+            <img src="./Images_Gallery/TwoPinkTulips.jpg" alt="Two Pink Tulips" style="height:500px">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">6 / 6</div>
+            <img src="./Images_Gallery/YardTulips.jpg" alt="Tulips in the Yard" style="height:500px">
+        </div>
+
+        <!--Next and previous buttons-->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <!--Image text-->
+        <div class="caption-container">
+            <p id="cpation" style="font-family:DancingScript; font-size: 30pt;padding-top: 10px;padding-bottom:10px;">Flowers</p>
+        </div>
+
+        <!--Thumbnail images-->
+        <div class="row">
+            <div class="column">
+                <img class="demo cursor" src="Images_Gallery/Tulips-pink.JPG" style="width:100%" onclick="currentSlide(5)" alt="Pink Tulips">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="Images_Gallery/April 22, 2020-SlocumKailey_0938.jpg" style="width:100%" onclick="currentSlide(1)" alt="Iris Blossom">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="Images_Gallery/RedTulip.jpg" style="width:100%" onclick="currentSlide(2)" alt="Red Tulip">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="Images_Gallery/Wisteria.jpg" style="width:100%" onclick="currentSlide(3)" alt="Wisteria">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="Images_Gallery/TwoPinkTulips.jpg" style="width:100%" onclick="currentSlide(4)" alt="Two Pink Tulips">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="Images_Gallery/YardTulips.jpg" style="width:100%" onclick="currentSlide(6)" alt="Tulips in the Yard">
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+            showSlides(slideIndex +=n);
+        }
+
+        //Thumbnail image controls
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demo");
+            var captionText = document.getElementById("caption");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i] .style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i] .className = dots[i] .className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+            captionText.innerHTML = dots[slideIndex-1].alt;
+        }
+    </script>
+
+    <br>
+    <br>
+
+    <article>
+        <h2>A Passion for Photography</h2>
+        <p>When I was ten years old, I bought my first point-and-shoot camera. Ever since then I have developed a passion for
+            capturing the world around me through a camera lens. I recently bought a CANON Rebel T7 DSLR, and have enjoyed the 
+            new possibilities that its features provide me when I take pictures.
+            <br>My favorite things to photograph are objects and nature. I especially enjoy close-up photos, and would love to practice
+            more with macro lenses. Spring is one of the best times of year for taking pictures of nature because of the beautiful
+            flowers and blossoms.
+            <br>I have also enjoyed developing my photography skills so that I can take good family photos for holidays, events, and vacations.
+            Scrapbooking is another of my hobbies, and I love capturing memories these ways!
+        </p>
+    </article>
+
+    <section>
+        <table id="table">
+            <thead>
+                <tr>
+                    <th><img class="tableimage" src="Images_Gallery/Clock.jpg" alt="Clock"></th>
+                    <th><img class="tableimage" src="Images_Gallery/April 11, 2020-SlocumKailey_0403.jpg" alt="Sunrise"></th>
+                    <th><img class="tableimage" src="Images_Gallery/Cactus.jpg" alt="Cactus"></th>
+                    <th><img class="tableimage" src="Images_Gallery/StatuePortrait.jpg" alt="Statue Portrait"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th><img class="tableimage" src="Images_Gallery/LittlePlant.jpg" alt="Little Plant"></th>
+                    <th><img class="tableimage" src="Images_Gallery/Sky.jpg" alt="Sky"></th>
+                    <th><img class="tableimage" src="Images_Gallery/Globe.jpg" alt="Globe"></th>
+                    <th><img class="tableimage" src="Images_Gallery/PuffyClouds.jpg" alt="Puffy Clouds"></th>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <th><img class="tableimage" src="Images_Gallery/Turkey.jpg" alt="Turkey"></th>
+                    <th><img class="tableimage" src="Images_Gallery/Grass.jpg" alt="Grass"></th>
+                    <th><img class="tableimage" src="Images_Gallery/Sunrise.JPG" alt="Sunrise"></th>
+                    <th><img class="tableimage" src="Images_Gallery/WoodStatue.jpg" alt="Wood Statue"></th>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th><img class="tableimage" src="Images_Gallery/PottedPlant.jpg" alt="Potted Plant"></th>
+                    <th><img class="tableimage" src="Images_Gallery/LightBulb.jpg" alt="Light Bulb"></th>
+                    <th><img class="tableimage" src="Images_Gallery/CompassTop.jpg" alt="Compass"></th>
+                    <th><img class="tableimage" src="Images_Gallery/Fountain.jpg" alt="Fountain"></th>
+                </tr>
+            </tfoot>
+        </table>
+    </section>
+   
+
+    <footer>
+        <span style="text-align:left;">
+            Author: Kailey Slocum
+        </span>
+        <span style="text-align:center; padding-left:200px;">
+            &#169; Kailey Slocum 2021
+        </span>
+        <span style="text-align:center; padding-left:200px;">
+            Created in CIS 195: Web Authoring 1
+        </span>
+        <span style="float:right;">
+            Last modified: <i>June 9, 2021</i>
+        </span>
+    </footer>
+</body>

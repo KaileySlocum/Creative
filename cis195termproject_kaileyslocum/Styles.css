@@ -1,0 +1,255 @@
+/* Here is the CSS for the dropdown menu */
+
+.menu {
+    overflow: hidden;
+    background-color:#646464;
+    color: #ebe9e9;
+    width: 100%;
+    font-family: PT_Sans-Regular;
+    margin-top:90px;
+    z-index:1;
+}
+
+.menu a {
+    float: left;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-decoration: none;
+    font-size: 35px;
+    color: #ebe9e9;
+    width: 19%;
+    display:block;
+}
+
+.blogdropdown {
+    float:left;
+    overflow:hidden;
+}
+
+.blogdropdown .blogbutton {
+    font-size: 35px;
+    text-align:center;
+    border:none;
+    outline:none;
+    color: #ebe9e9;
+    padding-top:1px;
+    padding-bottom:1px;
+    padding-left:100px;
+    padding-right:100px;
+    background-color: #646464;
+    font-family: PT_Sans-Regular;
+}
+
+.menu a:hover, .blogdropdown:hover .blogbutton {
+    background-color: #353535;
+    color: #ebe9e9;
+}
+
+.blog-list {
+    display:none;
+    position: absolute;
+    background-color: #cccccc;
+    min-width:250px;
+    margin: 0;
+    padding:0;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    text-align: center;
+}
+
+.blog-list a {
+    float: none;
+    text-align: center;
+    color: #353535;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 25px;
+    width: 250px;
+}
+
+.blog-list a:hover {
+    background-color:#353535;
+    width: 250px;
+}
+
+.blogdropdown:hover .blog-list {
+    display: block;
+}
+
+/* Here is the CSS for the button images */
+
+
+
+.button {
+    position: absolute;
+    background-color: rgba(250, 250, 250, 0.685);
+    color: black;
+    font-family:PT_Sans-Regular;
+    font-size: 20px;
+    padding: 20px 40px;
+    border: solid;
+    border-color:black;
+    border-width: 1px;
+    cursor: pointer;
+    border-radius: 0px;
+    text-align: center;
+    margin-left: -100px;
+    margin-top: -50px;
+    text-decoration: none;
+}
+
+
+.button:hover {
+    box-shadow: inset;
+}
+
+#table {
+    border: solid;
+    margin-left: 200px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding: 5px;
+    border-spacing: 10px;
+    border-color: #353535;
+    border-width: 1px;
+}
+
+table, th, td {
+    border: solid;
+}
+
+table th {
+    width: 500px;
+    height: 320px;
+    text-align: center;
+    border-color: #353535;
+    border-width: 1px;
+}
+
+table td {
+    width: 500px;
+    height: 320px;
+    text-align: center;
+    border-color: #353535;
+    border-width: 1px;
+}
+
+
+
+/* Here is the CSS for items in the middle of the webpages */
+
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    color: rgba(194, 194, 194);
+}
+
+#background-image {
+    background-image: url('./Images_Home/');
+    position: relative;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position: cover;
+}
+
+#HeaderImage {
+    width: 100%;
+    height: 550px;
+    object-fit:cover;
+}
+
+h1 {
+    font-family: DancingScript;
+    font-size: 100px;
+    padding-left: 60px;
+    padding-top: 30px;
+}
+
+@font-face {
+    font-family: DancingScript;
+    src: url(./Dancing_Script/static/DancingScript-Regular.ttf);
+}
+
+h2 {
+    color: black;
+    font-family: DancingScript;
+    font-size: 50px;
+    margin-left: 50px;
+}
+
+p {
+    font-family:PT_Serif-Regular;
+    padding-left: 60px;
+    padding-right:60px;
+    font-size: 20px;
+    color: black;
+}
+
+@font-face {
+    font-family: PT_Serif-Regular;
+    src: url(./PT_Serif/PTSerif-Regular.ttf);
+}
+
+li {
+    font-family:PT_Serif-Regular;
+}
+
+ul {
+    font-family:PT_Serif-Regular;
+    margin-left:50px;
+    color:black;
+    font-size: 17px;
+    line-height:1.5;
+}
+
+@font-face {
+    font-family: PT_Sans-Regular;
+    src: url(./PT_Sans/PTSans-Regular.ttf);
+}
+
+article {
+    background-color: rgb(238, 238, 238);
+    margin-bottom: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: 1px solid;
+}
+
+section {
+    background-color: rgb(238, 238, 238);
+    margin-bottom: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: 1px solid;
+}
+
+#link {
+   color: black;
+}
+
+#link:visited {
+    text-decoration: none;
+    color: black;
+}
+
+
+/* Here is the CSS for items at the bottom of the webpages */
+
+footer {
+    background-color:rgba(250, 250, 250, 0.685); 
+    color: black;
+    font-family:PT_Sans-Regular;
+    font-size:100%;
+    width: 100%;
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    margin: 0px;
+    position: fixed;
+    bottom: 0;
+}
